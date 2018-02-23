@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Shopping Bag</title>
+	  <meta http-equiv="content-language" content="en">
+	  <meta charset="UTF-8">
+	  <meta name="author" content="Anastasia Hahanova" />
+	  <link rel="stylesheet" href="CSS/general.css">
+	  <link rel="stylesheet" href="CSS/shopping_bag.css">
+	</head>
+	<body>
+		<header>
+			<div class='wrapMenu'>
+				<span id="logoNameMobile"><a href="start.html">TL</a></span>
+				<span id="logoName"><a href="start.html">Template</a></span>
+				<a href="#">	
+					<span id="emailSingUp">E-mail sing up</span>
+				</a>
+				<a href="shopping_bag.html">		
+				<span id="bag">
+					<span id="icoBag"></span>
+					Bag <span id="bagInsert">(0)</span>
+				</span>
+				</a>
+
+				<nav id="wrapIconMenu">
+					<div id="icoMenu"></div>
+					<div id="icoMenuClose"></div>
+				</nav>
+			</div>
+			<nav id="menu">
+				<ul>
+					<li><a href="catalog.html?women">Women</a></li>
+					<li><a href="catalog.html?men">Men</a></li>
+					<li><a href="catalog.html?handbags">Handbags</a></li>
+					<li><a href="catalog.html?accessories">Accessories</a></li>
+					<li><a href="catalog.html?sale">Sale</a></li>
+					<li><a href="catalog.html?new">New Arrivals</a></li>
+					<li><a href="">Clearance</a></li>
+					<li><a href="">Store Locator</a></li>
+				</ul>
+				<div id="wrapSearch">
+					<input type="text" placeholder="Style Name" id="search">
+					<div id="wrapIcoSearch">
+						<div id="icoSearch"></div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="wrapTitlePage">
+				<div class="titlePage">
+					<a href="shopping_bag.html" class="textTitlePage">Shopping bag </a>
+				</div>
+			</div>
+			<div class="catalog">
+				<div class="wrapItems" id="wrapItems">
+				</div>
+			</div>
+			<div class="wrapInfo">
+				<p>You've qualified for Free UK Next Day Delivery on your order.
+					Don't forget to enter the code <span class="highlight">nexday</span> at checkout
+				</p>
+			</div>
+			<div class="wrapBuynow">
+				<div class="btnWrap" id="buynow">
+					<a href="#" id="emptyBag">Empty bag</a>
+					<input type="button" value="Buy now" class="btnImg" id="btnBuy">
+					<p class="total">Total cost<br><span id="totalPrice">£251.50</span></p>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="wrapFooter1">
+				<div class="wrapFooterTabletLvl1">
+					<div class="wrapFooterLvl1">
+						<div class="wrapLinks">
+							<div class="footerLinksBlock">
+								<h3>Quick Links</h3>
+								<ul>
+									<li><a href="">Store locator</a></li>
+									<li><a href="">Gift cards</a></li>
+									<li><a href="">Size guide</a></li>
+									<li><a href="">About us</a></li>
+									<li><a href="">Support</a></li>
+								</ul>
+							</div>
+							<div class="footerLinksBlock">
+								<h3>Customer Care</h3>
+								<ul>
+									<li><a href="">Customer service</a></li>
+									<li><a href="">Track my order</a></li>
+									<li><a href="">Return policy</a></li>
+									<li><a href="">Shipping &amp; delivery</a></li>
+									<li><a href="">Contact us</a></li>
+									<li><a href="">Careers</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="wrapFooterLvl2">
+						<div class="footerBlockLvl2">
+							<h3>Questions</h3>
+							<div id="icoTwitter"></div><p>Tweet us <span class="bold">@template</span></p>
+						</div>
+						<div class="footerBlockLvl2">
+							<h3>Order by phone</h3>
+							<p>8-800-409-47-12</p>
+						</div>
+						<div id="wrapDeliveryInfo">
+							<p id="deliveryInfo">We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.</p>
+						</div>
+						<div class="footerBlockLvl2 smIcons" id="smIconTablet">
+							<a href=""><div class="icoFB"></div></a>
+							<a href=""><div class="icoTwi"></div></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wrapFooterLvl3">
+				<p id="legacy">
+					<a href="">Legal notice</a>
+					<a href="">Privacy policy</a>
+					<a href="">Site map</a>
+				</p>
+				<div class="smIcons" id="smIconMobile">
+					<a href=""><div class="icoFB"></div></a>
+					<a href=""><div class="icoTwi"></div></a>
+				</div>
+			</div>
+			<div class="wrapFooterLvl4">
+				<p id="footerCompany">© 2010–2015, The Template Group inc.</p>
+				<div id="wrapShare">
+					<a href="">
+						<h3 id="share">Share</h3>
+						<div id="shareNumbers"><span>1 437</span></div>
+					</a>
+				</div>
+			</div>
+		</footer>
+	<script src="data/catalog.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/shopping_bag.js"></script>
+	</body>
+</html>

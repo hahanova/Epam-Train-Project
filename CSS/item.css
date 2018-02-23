@@ -1,0 +1,140 @@
+/*------------------------ back to catalog --------------------------*/
+.back{
+	width: 100%;
+	height: 54px;
+	position: relative;
+	top: 17px;
+}
+.wrapBack{
+	border-top: solid 1px #e5e5e5;
+	border-bottom: solid 1px #e5e5e5;
+}
+.backText{
+	font: 9pt HelveticaBold;
+	letter-spacing: 0.3px;
+	padding-left: 21px;
+}
+.backText:hover{color: #f14a58;}
+@media (min-width: 768px){
+	.back{
+		height: 64px;
+		top: 21px;
+	}
+	.backText{
+	padding-left: 70px;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	}
+}
+@media (min-width: 1024px){
+	.wrapBack{border-top: none;}
+}
+@media (min-width: 1180px){
+	.back{width: 1180px; margin: 0 auto;}
+}
+/*------------------------ photo --------------------------*/
+.photos{
+	display: table;
+	width: 100%;
+}
+#openedPhoto > img, .photos img{
+	width: 100%;
+	margin-bottom: -5px;
+}
+.photos > div, .chosenPhoto{
+	display: table-cell;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 28px;
+}
+.photos > div:hover:after, .chosenPhoto:after{
+	content:"";
+	position: absolute;
+	box-shadow: 0 0 0 10000px rgba(0,0,0,0.4);
+}
+.itemBlock{margin: 16px 21px;}
+@media (min-width: 768px) and (max-width: 1023px){
+	.wrapPhotos{
+		display: table;
+		width: 100%;
+	}
+	.photos, #openedPhoto{display: table-cell; width: unset;}
+	#openedPhoto{width: 75%;}
+	.photos{vertical-align: top;}
+	.photos > div{display: block; margin: 0;}
+	.itemBlock{margin: 32px 40px;}
+}
+@media (min-width: 1024px){
+	.itemBlock{margin: 0 auto;}
+	.wrapItemBlock{margin: 60px 40px 0 40px;}
+}
+@media (min-width: 1180px){
+	.itemBlock{width: 1099px; }
+	.wrapItemBlock{margin: 60px auto 0 auto;}
+}
+/*---------------------------- info --------------------------*/
+.title, .description, .price{text-align: center;}
+.title{
+	font: 20px RobotoBold;
+	padding: 46px 0 22px;
+	letter-spacing: 0.5px;
+}
+.description{
+	font: italic 15px "Times New Roman";
+	line-height: 1.9em;
+	padding-bottom: 29px;
+}
+.price{
+	font-size: 17px;
+	padding-bottom: 20px;
+	letter-spacing: 0.9px;
+}
+#addToBag{padding-top: 50px;}
+@media (min-width: 768px){
+	.wrapText{margin: 0 15%;}
+	#addToBag{padding-top: 90px;}
+}
+@media (min-width: 1024px){
+	.itemBlock{display: table; }
+	.wrapText, .wrapPhotos{
+		display: table-cell; 
+		width: 50%; 
+		vertical-align: top;
+	}
+	#infoText{margin-left: 50px;}
+	.title, .description, .price {text-align: left;}
+	#addToBag{padding-top: 50px;
+		margin-left: 50px;}
+}
+/*--------------------------size / color -------------------------*/
+.params{
+	display: table; 
+	width: 100%;
+}
+.param, .titleParam{
+	display: inline-block;
+	font: 10.5pt HelveticaBold;
+	letter-spacing: 0.3px;
+	text-align: center;
+	margin-right: 17px;
+	border: solid 1px #fff;
+}
+.param:last-child {margin-right: 0px;}
+#size{margin-bottom: 40px;}
+.param > p{
+	width: 78px;
+	font: 10.5pt HelveticaBold;
+	letter-spacing: 0.3px;
+	text-align: center;
+	padding: 8px 0;
+}
+.titleParam{
+	border: none;
+	text-align: left;
+	width: 40px;
+	font: 9pt RobotoRegular;
+}
+.param:hover{
+	border: solid 1px #e5e5e5;
+	cursor: pointer;
+}
